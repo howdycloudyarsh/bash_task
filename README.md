@@ -75,3 +75,26 @@ Use --timeout to stop it automatically e.g.
 
 **-->>** **stress --cpu 4 --timeout 60s**
 
+# Make the script executable
+
+**chmod +x cpu_alert_on_slack.sh**
+
+# Install, Enable & Start the ‘cronie’ package.
+
+**-->>** **sudo yum install cronie -y**
+
+**-->>** **sudo systemctl enable crond.service**
+
+**-->>** **sudo systemctl start crond.service**
+
+# To run the script automatically, you can set up a cron job. Open your crontab configuration.
+
+**-->>** **crontab -e**
+
+# Add a line to run the script at your desired frequency. For example, to run every 5 minutes.
+
+**-->>** **"*/5 * * * * /path/to/cpu_alert_on_slack.sh"**
+
+
+
+
