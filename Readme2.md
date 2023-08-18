@@ -13,10 +13,10 @@ Bash Real-Time Scripts.
 MODIFY THE SCRIPT ACCORDING TO USAGE
 ```
 # Define the source files and directories to be backed up
-SOURCE_FILES="/home/ec2-user/source/file /home/ec2-user/source/file2"
+SOURCE_FILES="/path/to/directory1" "/path/to/directory2"
 
 # Define the backup destination directory
-BACKUP_DIR="/home/ec2-user/backup/"
+BACKUP_DIR="//path/to/backup_folder"
 
 # Create a timestamp for the backup
 TIMESTAMP=$(date +%Y%m%d)
